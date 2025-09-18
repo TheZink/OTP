@@ -18,6 +18,6 @@ public class TemperatureConverter {
     }
 
     public static double KelvinToCelsius(double kelvin) {
-        return kelvin - 273.15;
+        return Math.round((kelvin - 273.15) * 100) / 100.0;
     }
 }
